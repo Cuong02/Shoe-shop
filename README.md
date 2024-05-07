@@ -15,15 +15,7 @@ Shoe Shopping Cart built with SpringBoot, JPA, MySQL , Spring Security, Hibernat
 ![image](https://user-images.githubusercontent.com/29988949/75956013-da960d80-5e6b-11ea-84b2-a0ca854ef9c9.png)
 
 
-# How to deploy your Java application in 2 hours using Docker & GitLab CI/CD
-
-_Estimated reading time: 7 minutes_
-
-## Before start
-
-The guide is aimed to give a reader common knowledge about using Docker and Gitlab CI/CD for Java project deployment. 
-
-**Docker, Docker-Compose and GitLab CI/CD** are also used for the project continuous delivery.
+# Deploy Shoe-Shopping application using Docker & GitLab CI/CD
 
 ## Step 1: Create a GitLab repository
 
@@ -41,7 +33,7 @@ You have to replace `your_username` and `your_project_name` in the source code t
 
 The second step is creating a Java & Maven image. A Docker image is a file, comprised of multiple layers,
  used to execute code in a Docker container. A Docker image is described in `Dockerfile` by default. The most interesting commands is:
- [Dockerfile](Docker_file.png)
+ [Dockerfile](https://github.com/Cuong02/Shoe-shop/blob/main/docker_file.png)
  is used to set a default command for the image. However it will be over-written by a Docker-compose file.
 
 ## Step 3: Create GitLab CI/CD pipeline
