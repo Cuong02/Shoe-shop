@@ -42,8 +42,7 @@ For my purposes contains only 2 basic steps:
 * `build` step builds Java application image and push it to a private registry. Substitute a registry URL by your own link.
 * `deploy` step logins to a server via ssh and pulls changes from registry
 
-The deploy step uses a `devops/deploy.sh` file. You have to change it: replace **47.47.47.47** to your remote address IP
-and replace registry URL:
+The deploy step uses a `devops/deploy.sh` file.
 > docker pull registry.gitlab.com/your_username/your_project_name:latest
 
 ## Step 4: Push new files
@@ -63,6 +62,7 @@ Go to **GitLab project page - Settings - CI / CD - Environment variables** and c
 
 `git clone https://gitlab.com/your_username/your_project_name.git`
 
-## Step 9. Make a commit to prove that everything works fine
+Step 6: Clone a project
+Log in the remote server via ssh and clone a project at the root:
 
-Or create an issue to make me now that the guide has a mistake
+git clone https://gitlab.com/your_username/your_project_name.git
